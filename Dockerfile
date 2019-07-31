@@ -1,4 +1,3 @@
-FROM pluswerk/php-dev:apache-7.3
+FROM node:lts
 
-RUN composer global require deployer/deployer deployer/recipes
-RUN ln -s /root/.composer/vendor/bin/dep /usr/local/bin/dep
+RUN yarn && yarn global add gulp@^3.9.1
